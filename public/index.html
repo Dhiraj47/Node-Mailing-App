@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+	<title>E-MAIL Sending App</title>
+</head>
+<body>
+    <div class="container col-xl-6 border mt-4 p-4">
+        <h3 class="text-center">Email APP</h3>
+        <form action='/mailgun' method="POST" id="myform"> 
+            <hr>
+            <input id='email' name="email" type="email" class="form-control" placeholder="Receiver E-Mail"><br>
+            <input id='subject' name="subject" type="text" class="form-control" placeholder="Subject"><br>
+            <textarea id='message' name="message" placeholder="Enter Message here" class="form-control"></textarea><br>
+            <input id="submit" type="submit" value="Send Email" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+</html>
